@@ -1,0 +1,267 @@
+<style>
+    *{
+        border-top: 0cm;
+        margin-top: 1cm;  
+        background-color: black;
+        margin-bottom: 1cm;
+        border-bottom: 0cm;
+       
+        
+    }
+    .name
+    {
+        margin:0%;
+        color: aliceblue;
+        margin-bottom: 1.5cm;
+        /* border-bottom: 0cm; */
+        font-weight: bold;
+        font-family:monospace;
+        font-size: 2cm;
+        text-align: center;
+    }
+    .button
+    {
+        /* display: inline; */
+        margin-top: 0%;
+        background-color: black;
+        
+    }
+    .hero{
+
+        height: 10cm;
+        border-radius: 1000px;
+        margin-top: 0%;
+        background-image: url(image0_0_watermark1.png);
+        width: 25%;
+        margin-right: 1cm;
+        margin-left: 18%;
+        box-shadow: 5px 8px 20px rgba(0, 0,255,1.5);
+        cursor: pointer;
+ }
+
+    .hero:hover
+    {
+        opacity: 0.5;
+        box-shadow: 5px 8px 20px rgba(255,255,255,1.5);
+    }
+    .hero::after
+    {
+        opacity: 0.5;
+        
+    }
+    .villian
+    {
+        height: 10cm;
+        border-radius: 1000px;
+        background-image: url(e7802fd1-cc55-4a27-90dd-c6fd4ff04d6f1.png);
+        width: 25%;
+        margin-left:9%;
+        margin-top: 0%;
+        background-repeat: no-repeat;
+        box-shadow: 5px 8px 20px rgba(255, 0,0,1.5);
+        cursor: pointer;
+    }
+    .villian:hover
+    {   
+        opacity: 0.8;
+        box-shadow: 5px 8px 20px rgba(255,255,255,1.5);
+  
+    }
+    .villian:after
+    {
+        opacity: 0.5;
+    }
+    .name1
+    {
+        color:aliceblue;
+        background-color:black;
+        box-shadow: 5px 8px 20px rgba(148, 0,136,1.5);
+        width: fit-content;
+        padding-left: 1cm;
+        padding-right: 1cm;
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        font-size: 1cm;
+        margin-left: 40%;
+        height: fit-content;
+        cursor: pointer;
+    }
+    .name1:hover{
+        color: red;
+        box-shadow: 5px 8px 20px rgba(255,255,255,1.5);        
+        opacity: 0.5;
+    }
+    .logo
+    {
+        margin-left: 13%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        width: 75%;
+    }
+    .div2
+{
+    background-image: url(kalp2.jpg);
+}
+.e
+{
+    font-size: 2cm;
+    text-align: center;
+    margin-top: 0%;
+    color: antiquewhite;
+    margin-bottom: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 300px;
+  background-color: transparent;
+  margin-left: .5cm;
+  margin-right: .5cm;
+  margin-bottom: 1cm;
+  margin-top: 0%;
+  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.g
+{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 0%;
+    font-size: .75cm;
+    font-weight: bold;
+ 
+}
+.audio{
+    display: hidden;
+}
+.audio1
+{
+    display: hidden;
+}
+.audio2
+{
+    display: hidden;
+}
+ .head
+ {
+    font-size: 2.5cm;
+    color:  white; 
+    text-shadow: 0 0 10px black, 0 0 10px black;
+    text-align: end;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    background-color: pink;
+    image-resolution: 200px;
+ }
+.avatar
+{
+    background-image: url(l-intro-1600355460.png);
+    text-shadow: 0 0 10px wheat, 0 0 10px wheat;
+    color: #101820ff;
+    font-size: 1.5cm;
+    height: 2cm;
+    vertical-align: auto;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+.b{
+    width: 40%;
+    margin-left: 5%;
+    background-color: beige;
+    height: 1cm;
+    font-size: 1cm;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.b:hover
+{
+    opacity: .5;
+}
+ </style>
+<!DOCTYPE html>
+<link rel="stylesheets" href="page1.css">
+
+<body>
+   
+    <div class="button">
+        <img class="logo" src="logo-removebg-preview1.png"/>
+    <button class="hero" onclick="playAudio()"></button>
+    <audio src="hero.mp3" class="audio"></audio>
+    <button class="Villian" onclick="playAudio1()"></button>
+    <audio src="villain.mp3" class="audio1"></audio>
+    <button class="name1" onclick="playAudio2()">Listen story</button> 
+    <audio src="story.mp3" class="audio2"></audio>
+    <div class="div2">
+    <div class="row">
+        <div class="column">
+          <p class="g"  style="margin-left: 35%; text-align: left;">Hero:an enigmatic figure with a dark past. He was born with unique abilities, a product of a long-lost experiment. Gifted with superhuman strength, agility, and the ability to control shadows, he sought to use his powers for the greater good, even though it meant living a life of secrecy and isolation.</p>
+        </div>
+        <div class="column">
+          <h2 class="g" style="margin-left: 2cm; margin-right: 0%; text-align: left;" >Villain:a charismatic and cunning aristocrat. Behind his charming facade lay a twisted desire for power and control. In a quest to harness the power of dark magic, he delved into forbidden rituals, turning him into a master of dark forces and manipulation.</h2>
+          
+        </div>
+
+      </div>
+      
+    </div> 
+    <H1 class="avatar">Choose Your Avatar</H1>
+    
+    <button class="b" onclick="window.location.href=''">Hero</button>
+    <button class="b" onclick="window.location.href=''">Villain</button>
+     <h1 class="head">By Team XO </h1>
+
+</div>
+</body>
+
+<script>
+    let currentlyPlaying = false
+    function playAudio() {
+        const audio = document.querySelector(".audio");
+        if(currentlyPlaying){
+            audio.pause()
+            currentlyPlaying = false
+        }else{
+            audio.play()
+            currentlyPlaying = true
+        }
+        console.log("here>>>>>>>>>>>")
+    }
+</script>
+
+<script>
+    let currentlyPlaying1 = false
+    function playAudio1() {
+        const audio = document.querySelector(".audio1");
+        if(currentlyPlaying1){
+            audio.pause()
+            currentlyPlaying1 = false
+        }else{
+            audio.play()
+            currentlyPlaying1 = true
+        }
+        console.log("here>>>>>>>>>>>")
+    }
+</script>
+<script>
+    let currentlyPlaying2 = false
+    function playAudio2() {
+        const audio = document.querySelector(".audio2");
+        if(currentlyPlaying2){
+            audio.pause()
+            currentlyPlaying2 = false
+        }else{
+            audio.play()
+            currentlyPlaying2 = true
+        }
+        console.log("here>>>>>>>>>>>")
+    }
+</script>
+</html>
